@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>United AA Brothers Private Limited | Your Trusted Multi-Sector Trading Partner</title>
+  <meta name="description" content="United AA Brothers Private Limited - A trusted trading company in Rawalpindi offering groceries, automotive spare parts, and sanitary ware solutions under one roof.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/hero-carousel.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <a href="index.html" class="logo">
+        <img src="images/Logo Final.png" alt="United AA Brothers Logo" class="logo-image">
+        <div class="logo-text">
+          United AA Brothers
+          <span class="slogan">NAVIGATE THE MARKETS WITH US</span>
+        </div>
+      </a>
+      
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="index.html" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
+        <li class="nav-item"><a href="pages/about.html" class="nav-link"><i class="fas fa-info-circle"></i> About Us</a></li>
+        <li class="nav-item">
+          <a href="pages/services.html" class="nav-link">
+            <i class="fas fa-th-large"></i>
+            Our Divisions
+            <i class="fas fa-chevron-down"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="pages/groceries.html">
+              <i class="fas fa-shopping-cart"></i>
+              UNITED GROCERIES
+            </a>
+            <a href="pages/autoparts.html">
+              <i class="fas fa-car"></i>
+              UNITED AUTOPARTS
+            </a>
+            <a href="pages/sanitary.html">
+              <i class="fas fa-faucet"></i>
+              UNITED SANITARY PRODUCTS
+            </a>
+          </div>
+        </li>
+        <li class="nav-item"><a href="pages/contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+      
+      <button class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Carousel -->
+  <section class="hero-carousel">
+    <!-- Slide 1 -->
+    <div class="hero-slide active">
+      <div class="hero-bg" style="background-image: url('images/hero-slide-1.jpg')"></div>
+      <div class="hero-content">
+        <div class="container">
+          <span class="hero-tag">Multi-Sector Trading</span>
+          <h1 class="hero-title">United AA Brothers</h1>
+          <p class="hero-subtitle">Quality UNITED GROCERIES, UNITED AUTOPARTS & UNITED SANITARY PRODUCTS</p>
+          <div class="hero-buttons">
+            <a href="pages/services.html" class="btn-hero btn-primary">Explore Products</a>
+            <a href="pages/contact.html" class="btn-hero btn-white">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="hero-slide">
+      <div class="hero-bg" style="background-image: url('images/hero-slide-2.jpg')"></div>
+      <div class="hero-content">
+        <div class="container">
+          <span class="hero-tag">Trusted Partner</span>
+          <h1 class="hero-title">Quality & Reliability</h1>
+          <p class="hero-subtitle">Serving Rawalpindi with Excellence Since Day One</p>
+          <div class="hero-buttons">
+            <a href="pages/about.html" class="btn-hero btn-primary">About Us</a>
+            <a href="pages/services.html" class="btn-hero btn-white">Our Services</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="hero-slide">
+      <div class="hero-bg" style="background-image: url('images/hero-slide-3.jpg')"></div>
+      <div class="hero-content">
+        <div class="container">
+          <span class="hero-tag">Fast Delivery</span>
+          <h1 class="hero-title">On-Time Every Time</h1>
+          <p class="hero-subtitle">Efficient Supply Chain & Reliable Service</p>
+          <div class="hero-buttons">
+            <a href="pages/contact.html" class="btn-hero btn-primary">Get Quote</a>
+            <a href="pages/services.html" class="btn-hero btn-white">View Products</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dots -->
+    <div class="hero-nav">
+      <span class="dot active" data-slide="0"></span>
+      <span class="dot" data-slide="1"></span>
+      <span class="dot" data-slide="2"></span>
+    </div>
+  </section>
+
+  <!-- About Overview Section -->
+  <section class="section" style="padding-top: 8rem;">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image fade-up">
+          <div class="about-image-main">
+            <img src="images/about-team.jpg" alt="United AA Brothers Team">
+          </div>
+          <div class="about-image-badge">
+            <span class="years">15+</span>
+            <span class="text">Years Combined<br>Experience</span>
+          </div>
+        </div>
+        
+        <div class="about-content fade-up">
+          <div class="section-header" style="text-align: left; margin: 0 0 1.5rem 0;">
+            <span class="section-label">
+              <i class="fas fa-info-circle"></i>
+              About Our Company
+            </span>
+          </div>
+          <h3>Building Trust Through Quality & Reliability</h3>
+          <p>United AA Brothers Private Limited is a newly established trading and retail company that brings together years of industry experience under one unified brand. We provide quality, reliability, and convenience across three essential sectors.</p>
+          <p>Backed by a management team with extensive hands-on experience in groceries, automotive parts, and sanitary markets, we are committed to becoming a trusted name in essential trading sectors across Rawalpindi and beyond.</p>
+          
+          <div class="about-features">
+            <div class="about-feature">
+              <i class="fas fa-check"></i>
+              <span>Experienced Management Team</span>
+            </div>
+            <div class="about-feature">
+              <i class="fas fa-check"></i>
+              <span>Quality Sourcing & Products</span>
+            </div>
+            <div class="about-feature">
+              <i class="fas fa-check"></i>
+              <span>Competitive Market Pricing</span>
+            </div>
+            <div class="about-feature">
+              <i class="fas fa-check"></i>
+              <span>Reliable Supply Chain</span>
+            </div>
+          </div>
+          
+          <a href="pages/about.html" class="btn btn-primary">
+            <i class="fas fa-arrow-right"></i>
+            Learn More About Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Divisions Section - Modern Cards with Images -->
+  <section class="section section-gray">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-label">
+          <i class="fas fa-briefcase"></i>
+          Our Business Divisions
+        </span>
+        <h2 class="section-title">Three Sectors, One Commitment to Excellence</h2>
+        <p class="section-subtitle">We operate across three essential business sectors, providing comprehensive trading solutions tailored to meet diverse customer needs.</p>
+      </div>
+      
+      <div class="divisions-grid">
+        <!-- Groceries Division -->
+        <div class="division-card fade-up">
+          <div class="division-card-image">
+            <img src="images/groceries-card.jpg" alt="Groceries Division">
+          </div>
+          
+          <div class="division-card-content">
+            <h3>UNITED GROCERIES</h3>
+            <p>Your one-stop solution for FMCG, packaged foods, and household essentials with guaranteed freshness and availability.</p>
+            <ul class="division-features">
+              <li><i class="fas fa-check-circle"></i> Fast-Moving Consumer Goods</li>
+              <li><i class="fas fa-check-circle"></i> Packaged Food Products</li>
+              <li><i class="fas fa-check-circle"></i> Household Essentials</li>
+              <li><i class="fas fa-check-circle"></i> Freshness Guaranteed</li>
+            </ul>
+            <a href="pages/services.html#groceries" class="btn btn-outline btn-sm">
+              Explore Division
+            </a>
+          </div>
+        </div>
+        
+        <!-- Automotive Division -->
+        <div class="division-card fade-up">
+          <div class="division-card-image">
+            <img src="images/automotive-card.jpg" alt="Automotive Division">
+          </div>
+          
+          <div class="division-card-content">
+            <h3>UNITED AUTOPARTS</h3>
+            <p>Genuine spare parts and accessories for light commercial vehicles, backed by trusted supplier networks and workshop support.</p>
+            <ul class="division-features">
+              <li><i class="fas fa-check-circle"></i> Genuine Spare Parts</li>
+              <li><i class="fas fa-check-circle"></i> Vehicle Accessories</li>
+              <li><i class="fas fa-check-circle"></i> Light Commercial Vehicles</li>
+              <li><i class="fas fa-check-circle"></i> Workshop Partnerships</li>
+            </ul>
+            <a href="pages/services.html#automotive" class="btn btn-outline btn-sm">
+              Explore Division
+            </a>
+          </div>
+        </div>
+        
+        <!-- Sanitary Division -->
+        <div class="division-card fade-up">
+          <div class="division-card-image">
+            <img src="images/sanitary-card.jpg" alt="Sanitary Division">
+          </div>
+         
+          <div class="division-card-content">
+            <h3>UNITED SANITARY PRODUCTS</h3>
+            <p>Modern sanitary ware and fittings for residential and commercial projects, combining durability with contemporary design.</p>
+            <ul class="division-features">
+              <li><i class="fas fa-check-circle"></i> Modern Fittings & Fixtures</li>
+              <li><i class="fas fa-check-circle"></i> Residential Solutions</li>
+              <li><i class="fas fa-check-circle"></i> Commercial Projects</li>
+              <li><i class="fas fa-check-circle"></i> Durable & Functional</li>
+            </ul>
+            <a href="pages/services.html#sanitary" class="btn btn-outline btn-sm">
+              Explore Division
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Showcase Gallery -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-label">
+          <i class="fas fa-images"></i>
+          Our Products in Action
+        </span>
+        <h2 class="section-title">Quality Products Across All Divisions</h2>
+        <p class="section-subtitle">Browse through our diverse range of products serving households, workshops, and commercial clients.</p>
+      </div>
+      
+      <div class="gallery-grid">
+        <div class="gallery-item fade-up">
+          <div class="gallery-image">
+            <img src="images/groceries-division.jpg" alt="Groceries Products">
+            <div class="gallery-overlay">
+              <div class="gallery-content">
+                <i class="fas fa-shopping-cart"></i>
+                <h4>Fresh Groceries</h4>
+                <p>Quality FMCG products</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item fade-up">
+          <div class="gallery-image">
+            <img src="images/automotive-division.jpg" alt="Automotive Parts">
+            <div class="gallery-overlay">
+              <div class="gallery-content">
+                <i class="fas fa-car"></i>
+                <h4>Auto Parts</h4>
+                <p>Genuine spare parts</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item fade-up">
+          <div class="gallery-image">
+            <img src="images/sanitary-division.jpg" alt="Sanitary Products">
+            <div class="gallery-overlay">
+              <div class="gallery-content">
+                <i class="fas fa-faucet"></i>
+                <h4>Sanitary Ware</h4>
+                <p>Modern fittings</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item fade-up">
+          <div class="gallery-image">
+            <img src="images/about-warehouse.jpg" alt="Warehouse Operations">
+            <div class="gallery-overlay">
+              <div class="gallery-content">
+                <i class="fas fa-warehouse"></i>
+                <h4>Our Warehouse</h4>
+                <p>Efficient storage</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item fade-up">
+          <div class="gallery-image">
+            <img src="images/groceries-card.jpg" alt="Packaged Foods">
+            <div class="gallery-overlay">
+              <div class="gallery-content">
+                <i class="fas fa-box"></i>
+                <h4>Packaged Foods</h4>
+                <p>Wide variety</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item fade-up">
+          <div class="gallery-image">
+            <img src="images/automotive-card.jpg" alt="Vehicle Accessories">
+            <div class="gallery-overlay">
+              <div class="gallery-content">
+                <i class="fas fa-tools"></i>
+                <h4>Accessories</h4>
+                <p>Complete range</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How We Work Section -->
+  <section class="section section-gray">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-label">
+          <i class="fas fa-cogs"></i>
+          Our Process
+        </span>
+        <h2 class="section-title">How We Serve You</h2>
+        <p class="section-subtitle">A streamlined process designed to deliver excellence at every step.</p>
+      </div>
+      
+      <div class="process-grid">
+        <div class="process-item fade-up">
+          <div class="process-number">01</div>
+          <div class="process-icon">
+            <i class="fas fa-phone-alt"></i>
+          </div>
+          <h4>Contact Us</h4>
+          <p>Reach out via phone, email, or visit our location to discuss your requirements.</p>
+        </div>
+        
+        <div class="process-arrow">
+          <i class="fas fa-arrow-right"></i>
+        </div>
+        
+        <div class="process-item fade-up">
+          <div class="process-number">02</div>
+          <div class="process-icon">
+            <i class="fas fa-clipboard-list"></i>
+          </div>
+          <h4>Consultation</h4>
+          <p>Our team understands your needs and recommends the best products.</p>
+        </div>
+        
+        <div class="process-arrow">
+          <i class="fas fa-arrow-right"></i>
+        </div>
+        
+        <div class="process-item fade-up">
+          <div class="process-number">03</div>
+          <div class="process-icon">
+            <i class="fas fa-box-open"></i>
+          </div>
+          <h4>Order Processing</h4>
+          <p>We prepare your order with quality checks and proper packaging.</p>
+        </div>
+        
+        <div class="process-arrow">
+          <i class="fas fa-arrow-right"></i>
+        </div>
+        
+        <div class="process-item fade-up">
+          <div class="process-number">04</div>
+          <div class="process-icon">
+            <i class="fas fa-truck"></i>
+          </div>
+          <h4>Delivery</h4>
+          <p>Timely delivery to your doorstep with complete satisfaction.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Testimonials Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-label">
+          <i class="fas fa-quote-left"></i>
+          Client Testimonials
+        </span>
+        <h2 class="section-title">What Our Clients Say</h2>
+        <p class="section-subtitle">Hear from businesses and individuals who trust us for their trading needs.</p>
+      </div>
+      
+      <div class="testimonials-grid">
+        <div class="testimonial-card fade-up">
+          <div class="testimonial-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">"United AA Brothers has been our go-to supplier for groceries. Their product quality and timely delivery are exceptional. Highly recommended for retail businesses!"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">
+              <i class="fas fa-user"></i>
+            </div>
+            <div>
+              <h5>Ahmed Khan</h5>
+              <span>Retail Store Owner</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card fade-up">
+          <div class="testimonial-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">"We source all our automotive parts from UAB. Their genuine products and competitive pricing have helped our workshop grow significantly."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">
+              <i class="fas fa-user"></i>
+            </div>
+            <div>
+              <h5>Muhammad Ali</h5>
+              <span>Auto Workshop Manager</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card fade-up">
+          <div class="testimonial-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">"For our construction projects, UAB provides top-quality sanitary products. Their professional service and product range are unmatched in Rawalpindi."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">
+              <i class="fas fa-user"></i>
+            </div>
+            <div>
+              <h5>Bilal Hassan</h5>
+              <span>Construction Contractor</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-label">
+          <i class="fas fa-star"></i>
+          Why Choose Us
+        </span>
+        <h2 class="section-title">The United AA Brothers Advantage</h2>
+        <p class="section-subtitle">We combine industry expertise with customer-centric service to deliver exceptional value across all our business divisions.</p>
+      </div>
+      
+      <div class="why-choose-grid">
+        <div class="why-choose-content">
+          <div class="why-choose-item fade-up">
+            <div class="why-choose-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <div>
+              <h4>Experienced Management</h4>
+              <p>Our leadership team brings years of hands-on experience across all three sectors, ensuring expert guidance and reliable service.</p>
+            </div>
+          </div>
+          
+          <div class="why-choose-item fade-up">
+            <div class="why-choose-icon">
+              <i class="fas fa-award"></i>
+            </div>
+            <div>
+              <h4>Quality Sourcing</h4>
+              <p>We partner with trusted suppliers and manufacturers to ensure every product meets our strict quality standards.</p>
+            </div>
+          </div>
+          
+          <div class="why-choose-item fade-up">
+            <div class="why-choose-icon">
+              <i class="fas fa-tags"></i>
+            </div>
+            <div>
+              <h4>Competitive Pricing</h4>
+              <p>Our efficient operations and strong supplier relationships enable us to offer market-competitive prices.</p>
+            </div>
+          </div>
+          
+          <div class="why-choose-item fade-up">
+            <div class="why-choose-icon">
+              <i class="fas fa-shipping-fast"></i>
+            </div>
+            <div>
+              <h4>Reliable Supply Chain</h4>
+              <p>We maintain optimal inventory levels to ensure consistent product availability and timely delivery.</p>
+            </div>
+          </div>
+          
+          <div class="why-choose-item fade-up">
+            <div class="why-choose-icon">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <div>
+              <h4>Ethical Business Practices</h4>
+              <p>Transparency and integrity form the foundation of all our business dealings with clients and suppliers.</p>
+            </div>
+          </div>
+          
+          <div class="why-choose-item fade-up">
+            <div class="why-choose-icon">
+              <i class="fas fa-headset"></i>
+            </div>
+            <div>
+              <h4>Customer-Centric Service</h4>
+              <p>We prioritize customer satisfaction with personalized service and responsive support at every touchpoint.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="why-choose-image fade-up">
+          <img src="images/about-warehouse.jpg" alt="Our Warehouse">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location & Contact Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-label">
+          <i class="fas fa-chart-line"></i>
+          Our Impact
+        </span>
+        <h2 class="section-title">Growing Together</h2>
+        <p class="section-subtitle">Numbers that reflect our commitment to excellence and customer satisfaction.</p>
+      </div>
+      
+      <div class="impact-grid">
+        <div class="impact-card fade-up">
+          <div class="impact-icon">
+            <i class="fas fa-box"></i>
+          </div>
+          <div class="impact-number" data-target="5000">0</div>
+          <div class="impact-label">Products Delivered</div>
+          <p>Monthly deliveries across all divisions</p>
+        </div>
+        
+        <div class="impact-card fade-up">
+          <div class="impact-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <div class="impact-number" data-target="150">0</div>
+          <div class="impact-label">Happy Clients</div>
+          <p>Businesses trusting our services</p>
+        </div>
+        
+        <div class="impact-card fade-up">
+          <div class="impact-icon">
+            <i class="fas fa-handshake"></i>
+          </div>
+          <div class="impact-number" data-target="50">0</div>
+          <div class="impact-label">Partner Suppliers</div>
+          <p>Trusted supplier relationships</p>
+        </div>
+        
+        <div class="impact-card fade-up">
+          <div class="impact-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <div class="impact-number" data-target="24">0</div>
+          <div class="impact-label">Hour Support</div>
+          <p>Available for your queries</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trusted Brands Section -->
+  <section class="section section-gray">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-label">
+          <i class="fas fa-award"></i>
+          Quality Brands
+        </span>
+        <h2 class="section-title">We Deal in Trusted Brands</h2>
+        <p class="section-subtitle">Partnering with leading manufacturers to bring you the best products.</p>
+      </div>
+      
+      <div class="brands-showcase">
+        <div class="brand-category fade-up">
+          <div class="brand-category-header">
+            <i class="fas fa-shopping-cart"></i>
+            <h4>Groceries Brands</h4>
+          </div>
+          <div class="brand-tags">
+            <span class="brand-tag">National Foods</span>
+            <span class="brand-tag">Shan</span>
+            <span class="brand-tag">Nestle</span>
+            <span class="brand-tag">Unilever</span>
+            <span class="brand-tag">Dalda</span>
+            <span class="brand-tag">Tapal</span>
+          </div>
+        </div>
+        
+        <div class="brand-category fade-up">
+          <div class="brand-category-header">
+            <i class="fas fa-car"></i>
+            <h4>Automotive Brands</h4>
+          </div>
+          <div class="brand-tags">
+            <span class="brand-tag">Suzuki Parts</span>
+            <span class="brand-tag">Honda Parts</span>
+            <span class="brand-tag">Toyota Parts</span>
+            <span class="brand-tag">Shell Oils</span>
+            <span class="brand-tag">Exide Batteries</span>
+            <span class="brand-tag">MRF Tyres</span>
+          </div>
+        </div>
+        
+        <div class="brand-category fade-up">
+          <div class="brand-category-header">
+            <i class="fas fa-faucet"></i>
+            <h4>Sanitary Brands</h4>
+          </div>
+          <div class="brand-tags">
+            <span class="brand-tag">Grohe</span>
+            <span class="brand-tag">Kohler</span>
+            <span class="brand-tag">American Standard</span>
+            <span class="brand-tag">Jaquar</span>
+            <span class="brand-tag">Roca</span>
+            <span class="brand-tag">Hindware</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location & Contact Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-label">
+          <i class="fas fa-map-marker-alt"></i>
+          Get In Touch
+        </span>
+        <h2 class="section-title">Visit Us or Send an Inquiry</h2>
+        <p class="section-subtitle">We are conveniently located in Rawalpindi and ready to serve your trading needs across all our business divisions.</p>
+      </div>
+      
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-card fade-up">
+            <div class="contact-card-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div>
+              <h4>Our Address</h4>
+              <p>H179, Street 6, Block-D<br>Airport Housing Society<br>Rawalpindi, Pakistan</p>
+            </div>
+          </div>
+          
+          <div class="contact-card fade-up">
+            <div class="contact-card-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div>
+              <h4>Phone Number</h4>
+              <p>+923349154516 (Mobile)<br>+92 51 1234567 (Landline)</p>
+            </div>
+          </div>
+          
+          <div class="contact-card fade-up">
+            <div class="contact-card-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <h4>Email Address</h4>
+              <p>unitedaabrothers@gmail.com</p>
+            </div>
+          </div>
+          
+          <div class="contact-card fade-up">
+            <div class="contact-card-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div>
+              <h4>Business Hours</h4>
+              <p>Monday - Saturday: 9:00 AM - 7:00 PM<br>Sunday: Closed</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form-wrapper fade-up">
+          <h3>Send Us a Message</h3>
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Your Name *</label>
+                <input type="text" class="form-input" placeholder="Enter your name" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Phone Number *</label>
+                <input type="tel" class="form-input" placeholder="Enter your phone" required>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label class="form-label">Email Address</label>
+              <input type="email" class="form-input" placeholder="Enter your email">
+            </div>
+            
+            <div class="form-group">
+              <label class="form-label">Interested In *</label>
+              <select class="form-select" required>
+                <option value="">Select a division</option>
+                <option value="groceries">Groceries Division</option>
+                <option value="automotive">Automotive Parts Division</option>
+                <option value="sanitary">Sanitary Products Division</option>
+                <option value="general">General Inquiry</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label class="form-label">Your Message</label>
+              <textarea class="form-textarea" placeholder="Tell us about your requirements..."></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <i class="fas fa-paper-plane"></i>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="map-container fade-up" style="margin-top: 3rem;">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.758631676!2d73.0997!3d33.6169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df94b0ffffffff%3A0xa0d7fe7b7b7b7b7b!2sAirport%20Housing%20Society%2C%20Rawalpindi!5e0!3m2!1sen!2s!4v1234567890" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <div class="cta-text">
+          <h2>Ready to Partner With Us?</h2>
+          <p>Contact us today to discuss your requirements and discover how we can support your business needs.</p>
+        </div>
+        <a href="pages/contact.html" class="btn btn-accent">
+          <i class="fas fa-phone"></i>
+          Get In Touch
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo footer-logo" style="margin-bottom: 1rem;">
+            <img src="images/Logo Final.png" alt="United AA Brothers Logo" class="logo-image">
+          </a>
+          <p>Your trusted multi-sector trading partner in Rawalpindi. We provide quality groceries, automotive parts, and sanitary solutions under one roof.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-links-wrapper">
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/about.html">About Us</a></li>
+            <li><a href="pages/services.html">Our Divisions</a></li>
+            <li><a href="pages/contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links-wrapper">
+          <h4 class="footer-title">Our Divisions</h4>
+          <ul class="footer-links">
+            <li><a href="pages/services.html#groceries">UNITED GROCERIES</a></li>
+            <li><a href="pages/services.html#automotive">UNITED AUTOPARTS</a></li>
+            <li><a href="pages/services.html#sanitary">UNITED SANITARY PRODUCTS</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact-wrapper">
+          <h4 class="footer-title">Contact Information</h4>
+          <ul class="footer-contact">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>H179, Street 6, Block-D<br>Airport Housing Society, Rawalpindi</span>
+            </li>
+            <li>
+              <i class="fas fa-phone-alt"></i>
+              <span>+923349154516</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span>unitedaabrothers@gmail.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 United AA Brothers Private Limited. All rights reserved.</p>
+        <p>Designed by <a href="https://ftzdigital.com/" target="_blank" rel="noopener noreferrer" style="color: #33ccff; text-decoration: none; font-weight: 600;">FTZ Digital</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/923349154516" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Custom JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>

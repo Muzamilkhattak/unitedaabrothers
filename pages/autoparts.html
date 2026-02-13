@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UNITED AUTOPARTS | United AA Brothers Private Limited</title>
+  <meta name="description" content="UNITED AUTOPARTS - Genuine spare parts and accessories for light commercial vehicles in Rawalpindi.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar scrolled">
+    <div class="container navbar-container">
+      <a href="../index.html" class="logo">
+        <img src="../images/Logo Final.png" alt="United AA Brothers Logo" class="logo-image">
+        <div class="logo-text">
+          United AA Brothers
+          <span class="slogan">NAVIGATE THE MARKETS WITH US</span>
+        </div>
+      </a>
+      
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="../index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link"><i class="fas fa-info-circle"></i> About Us</a></li>
+        <li class="nav-item">
+          <a href="services.html" class="nav-link active">
+            <i class="fas fa-th-large"></i>
+            Our Divisions
+            <i class="fas fa-chevron-down"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="groceries.html">
+              <i class="fas fa-shopping-cart"></i>
+              UNITED GROCERIES
+            </a>
+            <a href="autoparts.html">
+              <i class="fas fa-car"></i>
+              UNITED AUTOPARTS
+            </a>
+            <a href="sanitary.html">
+              <i class="fas fa-faucet"></i>
+              UNITED SANITARY PRODUCTS
+            </a>
+          </div>
+        </li>
+        <li class="nav-item"><a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+      
+      <button class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="division-hero" style="background: linear-gradient(135deg, #0052a3 0%, #0077cc 50%, #0099ff 100%); padding: 10rem 0 6rem; position: relative; overflow: hidden;">
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('../images/automotive-division.jpg') center/cover; opacity: 0.08;"></div>
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at 70% 50%, rgba(51, 204, 255, 0.2) 0%, transparent 50%);"></div>
+    
+    <div class="container" style="position: relative; z-index: 2;">
+      <div style="max-width: 900px; margin: 0 auto; text-align: center; color: white;">
+        <div style="display: inline-flex; align-items: center; justify-content: center; width: 120px; height: 120px; background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); border-radius: 30px; margin-bottom: 2rem; box-shadow: 0 10px 40px rgba(0,0,0,0.2);">
+          <i class="fas fa-car" style="font-size: 4rem;"></i>
+        </div>
+        <h1 style="font-size: 4rem; margin: 0 0 1.5rem 0; font-family: 'Montserrat', sans-serif; font-weight: 800; letter-spacing: -1px; text-shadow: 0 4px 20px rgba(0,0,0,0.3);">UNITED AUTOPARTS</h1>
+        <p style="font-size: 1.4rem; margin: 0 auto 2.5rem; opacity: 0.95; max-width: 700px; line-height: 1.6;">Genuine Spare Parts & Accessories for Light Commercial Vehicles</p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="contact.html" style="display: inline-flex; align-items: center; gap: 0.75rem; background: white; color: #0052a3; padding: 1rem 2.5rem; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 1.1rem; box-shadow: 0 10px 30px rgba(0,0,0,0.2); transition: transform 0.3s;">
+            <i class="fas fa-envelope"></i>
+            Request Quote
+          </a>
+          <a href="#products" style="display: inline-flex; align-items: center; gap: 0.75rem; background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); color: white; padding: 1rem 2.5rem; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 1.1rem; border: 2px solid rgba(255,255,255,0.3); transition: all 0.3s;">
+            <i class="fas fa-arrow-down"></i>
+            View Products
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 100px; background: linear-gradient(to top, white, transparent);"></div>
+  </section>
+
+  <!-- Overview Section -->
+  <section class="section">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+        <div class="fade-up">
+          <span class="section-label">
+            <i class="fas fa-info-circle"></i>
+            About UNITED AUTOPARTS
+          </span>
+          <h2 style="font-size: 2.5rem; margin: 1rem 0;">Genuine Parts, Trusted Service</h2>
+          <p style="font-size: 1.1rem; line-height: 1.8; color: #555; margin-bottom: 2rem;">
+            UNITED AUTOPARTS supplies genuine spare parts and accessories for light commercial vehicles. We maintain strong partnerships with workshops and mechanics, ensuring they have access to quality parts when they need them.
+          </p>
+          <a href="contact.html" class="btn btn-primary">
+            <i class="fas fa-envelope"></i>
+            Request Quote
+          </a>
+        </div>
+        <div class="fade-up">
+          <img src="../images/automotive-division.jpg" alt="UNITED AUTOPARTS" style="width: 100%; border-radius: 20px; box-shadow: 0 20px 60px rgba(0,0,0,0.15);">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Grid -->
+  <section id="products" class="section section-gray">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-label">
+          <i class="fas fa-cogs"></i>
+          Our Product Range
+        </span>
+        <h2 class="section-title">Complete Automotive Solutions</h2>
+      </div>
+      
+      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; margin-top: 3rem;">
+        <div class="fade-up" style="background: white; padding: 2rem; border-radius: 15px; text-align: center; box-shadow: 0 5px 20px rgba(0,0,0,0.08); transition: transform 0.3s;">
+          <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #0099ff, #0052a3); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+            <i class="fas fa-cog" style="font-size: 2rem; color: white;"></i>
+          </div>
+          <h4 style="margin-bottom: 0.5rem;">Engine Parts</h4>
+          <p style="color: #666; font-size: 0.95rem;">Pistons, rings, gaskets</p>
+        </div>
+        
+        <div class="fade-up" style="background: white; padding: 2rem; border-radius: 15px; text-align: center; box-shadow: 0 5px 20px rgba(0,0,0,0.08);">
+          <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #0099ff, #0052a3); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+            <i class="fas fa-oil-can" style="font-size: 2rem; color: white;"></i>
+          </div>
+          <h4 style="margin-bottom: 0.5rem;">Lubricants</h4>
+          <p style="color: #666; font-size: 0.95rem;">Engine oils, greases</p>
+        </div>
+        
+        <div class="fade-up" style="background: white; padding: 2rem; border-radius: 15px; text-align: center; box-shadow: 0 5px 20px rgba(0,0,0,0.08);">
+          <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #0099ff, #0052a3); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+            <i class="fas fa-battery-full" style="font-size: 2rem; color: white;"></i>
+          </div>
+          <h4 style="margin-bottom: 0.5rem;">Batteries</h4>
+          <p style="color: #666; font-size: 0.95rem;">Car & truck batteries</p>
+        </div>
+        
+        <div class="fade-up" style="background: white; padding: 2rem; border-radius: 15px; text-align: center; box-shadow: 0 5px 20px rgba(0,0,0,0.08);">
+          <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #0099ff, #0052a3); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+            <i class="fas fa-circle" style="font-size: 2rem; color: white;"></i>
+          </div>
+          <h4 style="margin-bottom: 0.5rem;">Tyres</h4>
+          <p style="color: #666; font-size: 0.95rem;">All sizes & brands</p>
+        </div>
+        
+        <div class="fade-up" style="background: white; padding: 2rem; border-radius: 15px; text-align: center; box-shadow: 0 5px 20px rgba(0,0,0,0.08);">
+          <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #0099ff, #0052a3); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+            <i class="fas fa-filter" style="font-size: 2rem; color: white;"></i>
+          </div>
+          <h4 style="margin-bottom: 0.5rem;">Filters</h4>
+          <p style="color: #666; font-size: 0.95rem;">Oil, air, fuel filters</p>
+        </div>
+        
+        <div class="fade-up" style="background: white; padding: 2rem; border-radius: 15px; text-align: center; box-shadow: 0 5px 20px rgba(0,0,0,0.08);">
+          <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #0099ff, #0052a3); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+            <i class="fas fa-brake" style="font-size: 2rem; color: white;"></i>
+          </div>
+          <h4 style="margin-bottom: 0.5rem;">Brake Parts</h4>
+          <p style="color: #666; font-size: 0.95rem;">Pads, discs, drums</p>
+        </div>
+        
+        <div class="fade-up" style="background: white; padding: 2rem; border-radius: 15px; text-align: center; box-shadow: 0 5px 20px rgba(0,0,0,0.08);">
+          <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #0099ff, #0052a3); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+            <i class="fas fa-lightbulb" style="font-size: 2rem; color: white;"></i>
+          </div>
+          <h4 style="margin-bottom: 0.5rem;">Lights</h4>
+          <p style="color: #666; font-size: 0.95rem;">Headlights, indicators</p>
+        </div>
+        
+        <div class="fade-up" style="background: white; padding: 2rem; border-radius: 15px; text-align: center; box-shadow: 0 5px 20px rgba(0,0,0,0.08);">
+          <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #0099ff, #0052a3); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+            <i class="fas fa-tools" style="font-size: 2rem; color: white;"></i>
+          </div>
+          <h4 style="margin-bottom: 0.5rem;">Accessories</h4>
+          <p style="color: #666; font-size: 0.95rem;">Tools, covers, mats</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-label">
+          <i class="fas fa-star"></i>
+          Why Choose Us
+        </span>
+        <h2 class="section-title">UNITED AUTOPARTS Advantage</h2>
+      </div>
+      
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 3rem;">
+        <div class="fade-up" style="padding: 2rem; border-left: 4px solid #0099ff;">
+          <i class="fas fa-certificate" style="font-size: 2.5rem; color: #0099ff; margin-bottom: 1rem;"></i>
+          <h4 style="margin-bottom: 1rem;">Genuine Parts</h4>
+          <p style="color: #666; line-height: 1.7;">All parts are sourced from authorized dealers and come with quality guarantees.</p>
+        </div>
+        
+        <div class="fade-up" style="padding: 2rem; border-left: 4px solid #0099ff;">
+          <i class="fas fa-handshake" style="font-size: 2.5rem; color: #0099ff; margin-bottom: 1rem;"></i>
+          <h4 style="margin-bottom: 1rem;">Workshop Partnerships</h4>
+          <p style="color: #666; line-height: 1.7;">Strong relationships with mechanics and workshops across Rawalpindi.</p>
+        </div>
+        
+        <div class="fade-up" style="padding: 2rem; border-left: 4px solid #0099ff;">
+          <i class="fas fa-shipping-fast" style="font-size: 2.5rem; color: #0099ff; margin-bottom: 1rem;"></i>
+          <h4 style="margin-bottom: 1rem;">Quick Availability</h4>
+          <p style="color: #666; line-height: 1.7;">Maintain optimal stock levels for fast delivery when you need it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section" style="background: linear-gradient(135deg, #0052a3 0%, #0099ff 100%); color: white; text-align: center;">
+    <div class="container">
+      <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Partner with UNITED AUTOPARTS</h2>
+      <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.95;">Get genuine parts at competitive prices for your workshop</p>
+      <a href="contact.html" class="btn" style="background: white; color: #0052a3; padding: 1rem 3rem; font-size: 1.1rem; font-weight: 600; border-radius: 50px;">
+        <i class="fas fa-phone"></i>
+        Get In Touch
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo footer-logo" style="margin-bottom: 1rem;">
+            <img src="../images/Logo Final.png" alt="United AA Brothers Logo" class="logo-image">
+          </a>
+          <p>Your trusted multi-sector trading partner in Rawalpindi. We provide quality groceries, automotive parts, and sanitary solutions under one roof.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-links-wrapper">
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links-wrapper">
+          <h4 class="footer-title">Our Divisions</h4>
+          <ul class="footer-links">
+            <li><a href="groceries.html">UNITED GROCERIES</a></li>
+            <li><a href="autoparts.html">UNITED AUTOPARTS</a></li>
+            <li><a href="sanitary.html">UNITED SANITARY PRODUCTS</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact-wrapper">
+          <h4 class="footer-title">Contact Information</h4>
+          <ul class="footer-contact">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>H179, Street 6, Block-D<br>Airport Housing Society, Rawalpindi</span>
+            </li>
+            <li>
+              <i class="fas fa-phone-alt"></i>
+              <span>+923349154516 (Mobile)</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span>unitedaabrothers@gmail.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 United AA Brothers Private Limited. All rights reserved.</p>
+        <p>Designed by <a href="https://ftzdigital.com/" target="_blank" rel="noopener noreferrer" style="color: #33ccff; text-decoration: none; font-weight: 600;">FTZ Digital</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/923349154516" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Custom JavaScript -->
+  <script src="../js/main.js"></script>
+</body>
+</html>
